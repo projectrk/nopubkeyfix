@@ -6,6 +6,8 @@
 #
 echo "Simple NO_PUBKEY Fix"
 echo
+echo "NOTE:"
+echo "Copy the key right after the \"NO_PUBKEY XXXXXX\" where \"XXXXXX\" is the key"
 read -p 'Input NO_PUBKEY: ' pubkey
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $pubkey
-echo "Done... "
+echo "Done... $pubkey fixed"
